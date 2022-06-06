@@ -1,130 +1,133 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="./styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <div>
 
-      <div class="container">
-   
-        <div class="sidebar" >
-          <div class="logo">
-  
-            <img src="./img/logo.png" width="20%"  alt="logo">
-          </div>
-  
-  
-          <ul class="bg bg-primary">
-            
-            <li> 
-              <div class="text-center p-2">
-              <button class="text-white" width="100px" height="80px"> <i class="fas fa-desktop"></i>  Vue D'ensemble </button>   
-            </div>
-            </li>
-  
-            <li> 
-              <div class="text-center p-2">
-                <button class="text-white" > <i class="fas fa-search"></i> Analyser </button>
-                
-            </div>
-            </li>
-  
-            <li>
-              <div class="text-center p-2">
-                <button class="text-white"> <i class="fas fa-history"></i> Historique</button>
-                
-              </div>
-            </li>
-            <li>
-              <div class="text-center p-2">
-                <button class="text-white"><i class="fas fa-cog"></i> option</button>
-                
-              </div>
-            </li>
-  
-          </ul>
-  
-          <div class="siteweb">
-            <button class="btn">SITE WEB</button>
-          </div>
-  
-          <div class="version">
-            <p>Version 1.0.0</p>
-          </div>
-  
-  
-  
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="./styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div>
+
+    <div class="container">
+
+      <div class="sidebar">
+        <div class="logo">
+
+          <img src="./img/logo.png" width="20%" alt="logo">
         </div>
-  
-  
-        <div class="right">
-  
-          <div class="nav">
 
-            <div>
 
-              <h1>Analyse du PC nécessaire</h1>
-    
-              <p>Espace à nettoyer : à déterminer par analyse</p>
-              <p>Dernière analyse : 08/06/2020</p>
-              <p>Dernière MAJ : 08/06/2020</p>
+        <ul class="bg bg-primary">
+
+          <li>
+            <div class="text-center p-2">
+              <button class="text-white" width="100px" height="80px"> <i class="fas fa-desktop"></i> Vue D'ensemble
+              </button>
             </div>
+          </li>
 
-            <div>
+          <li>
+            <div class="text-center p-2">
+              <button class="text-white"> <i class="fas fa-search"></i> Analyser </button>
 
-              <button class="btn btn-primary text-white">Analyser</button>
             </div>
-  
-  
-  
-  
-          </div>  
-  
-  
-     <div class="main">
-       <button class="nettoyer">
-        <i class="fas fa-broom"></i>
-         <h6 class="text-white">Nettoyer</h6>
-       </button>
-       <button class="nettoyer ">
-        <i class="fas fa-bars"></i>
-        <h6 class="text-white">historique</h6>
-       </button>
-       <button class="nettoyer ">
-        <i class="fas fa-sync"></i>
-        <h6 class="text-white">mettre à jour</h6>
-  
-       </button>
-  
-  
-  
-     </div>
-     <div class="footer">
-      <p class="text-dark">
-        PC-CLEANER est un logiciel made in Frane qui respecte votre vie privée. <br/>
-         C'est gratuit et ca le restera.
-      </p> 
-     </div>
+          </li>
+
+          <li>
+            <div class="text-center p-2">
+              <button class="text-white"> <i class="fas fa-history"></i> Historique</button>
+
+            </div>
+          </li>
+          <li>
+            <div class="text-center p-2">
+              <button class="text-white"><i class="fas fa-cog"></i> option</button>
+
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="siteweb">
+          <button class="btn">SITE WEB</button>
+        </div>
+
+        <div class="version">
+          <p>Version 1.0.0</p>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="right">
+
+        <div class="nav">
+
+          <div>
+
+            <h1>Analyse du PC nécessaire</h1>
+
+            <p>Espace à nettoyer : à déterminer par analyse</p>
+            <p>Dernière analyse size : <span id="analitic_size">0Mo</span></p>
+            <p>Dernière analyse : 08/06/2020</p>
+          </div>
+
+          <div>
+
+            <button class="btn btn-primary text-white"
+              onclick="dirSize('C:\\Users\\Youcode\\AppData\\Local\\Temp')">Analyser</button>
+          </div>
+        </div>
+
+
+        <div class="main">
+          <button class="nettoyer" id="clearButton">
+            <i class="fas fa-broom"></i>
+            <h6 class="text-white">Nettoyer</h6>
+          </button>
+          <button class="nettoyer ">
+            <i class="fas fa-bars"></i>
+            <h6 class="text-white">historique</h6>
+          </button>
+          <button class="nettoyer ">
+            <i class="fas fa-sync"></i>
+            <h6 class="text-white">mettre à jour</h6>
+
+          </button>
+
+
+
+        </div>
+        <div class="footer">
+          <p class="text-dark">
+            PC-CLEANER est un logiciel made in Frane qui respecte votre vie privée. <br />
+            C'est gratuit et ca le restera.
+          </p>
         </div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./renderer.js"></script>
+</body>
+
 </html>
-
-
-
-
-
-
-  
